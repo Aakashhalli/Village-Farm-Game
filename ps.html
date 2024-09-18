@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groundwater Conservation Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Groundwater Conservation Game</h1>
+      <div id="scenario-container">
+        <p id="scenario">
+          Welcome to the groundwater conservation game! Make decisions and
+          conserve groundwater!
+        </p>
+      </div>
+
+      <div id="choices-container">
+        <button class="choice-button" onclick="makeChoice(1)">Option 1</button>
+        <button class="choice-button" onclick="makeChoice(2)">Option 2</button>
+        <button class="choice-button" onclick="makeChoice(3)">Option 3</button>
+      </div>
+
+      <div id="score-container">
+        <p>Score: <span id="score">0</span></p>
+      </div>
+
+      <div id="message-container">
+        <p id="message"></p>
+      </div>
+
+      <div id="next-scenario-container">
+        <button
+          id="next-scenario"
+          onclick="nextScenario()"
+          style="display: none"
+        >
+          Next Scenario
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
